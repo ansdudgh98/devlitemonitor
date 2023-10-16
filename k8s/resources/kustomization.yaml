@@ -1,0 +1,8 @@
+resources:
+#- front-deploy.yaml
+#- grafana-deploy.yaml
+#- backend-deploy.yaml
+- ingress.yaml
+- backend-canary-deploy.yaml
+- front-canary-deploy.yaml
+- grafana-canary-deploy.yaml

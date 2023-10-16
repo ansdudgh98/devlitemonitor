@@ -1,0 +1,14 @@
+.control{
+    display: block;
+    margin : 10% 20%;
+    text-align: center;
+}
+
+
+.container-xxl{
+    width: 40%;
+    height: 30%;
+    margin: 5% 50%;
+    align-items: center;
+}
+

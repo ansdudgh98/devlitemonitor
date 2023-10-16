@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-backend
+  namespace: default
+data:
+  rds-host : "jdbc:mysql://terraform-2023100604421369590000000b.cloe03oenjgd.ap-northeast-2.rds.amazonaws.com/devlitemonitordb"
+  rds-username : "admin"
+  rds-password : "testtest"
+  kakao-client : "9c42f57995274aab505d61903323c550"
+  kakao-redirect-uri : "backend.devlitemonitor.com/login/oauth2/code/kakao"
+  grafana-id : "grafanaadmin"
+  grafana-pw : "grafanaadmin"
+
+
+
+  

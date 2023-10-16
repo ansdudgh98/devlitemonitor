@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-grafana
+  namespace: default
+data:
+  GF_INSTALL_PLUGINS : "grafana-clickhouse-datasource"
+
+
+  

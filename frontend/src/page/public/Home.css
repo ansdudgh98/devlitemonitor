@@ -1,0 +1,23 @@
+a{
+    display: block;
+    margin: 100px;
+    text-align: center;
+    align-items: center;
+    line-height: 1000%;
+}
+
+label {
+    display: block;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    line-height: 1000%;
+}
+
+.container-xxl{
+    width: 33%;
+    height: 30%;
+    margin: 15% auto;
+    align-items: center;
+}
+

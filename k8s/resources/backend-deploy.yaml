@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: backend
+spec:
+  replicas: 8
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      name: backend
+      labels:
+        app: backend
+    spec:
+      containers:
+        - env:
+            - name: rds-host
+              valueFrom:
+                configMapKeyRef:
+                  name: config-backend
+                  key: rds-host
+            - name: rds-username
+              valueFrom:
+                configMapKeyRef:
+                  name: config-backend
+                  key: rds-username
+            - name: rds-password
+              valueFrom:
+                configMapKeyRef:
+                  name: config-backend
+                  key: rds-password
+            - name: kakao-client-id
+              valueFrom:
+                configMapKeyRef:
+                  name: config-backend
+                  key: kakao-clientid
+            - name: kakao-redirect-uri
+              valueFrom:
+                configMapKeyRef:
+                  name: config-backend
+                  key: kakao-redirect-uri
+            - name: grafana-id
+              valueFrom:
+                configMapKeyRef:
+                  name: config-backend
+                  key: grafana-id
+            - name: grafana-pw
+              valueFrom:
+                configMapKeyRef:
+                  name: config-backend
+                  key: grafana-pw
+          name: backenddeploy
+          image: 906294041269.dkr.ecr.ap-northeast-2.amazonaws.com/backend
+          ports:
+            - containerPort: 8080
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: backend

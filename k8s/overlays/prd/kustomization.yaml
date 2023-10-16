@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: 906294041269.dkr.ecr.ap-northeast-2.amazonaws.com/backend
+  newName: 906294041269.dkr.ecr.ap-northeast-2.amazonaws.com/backend
+  newTag: eaa4c4be
+- name: 906294041269.dkr.ecr.ap-northeast-2.amazonaws.com/front
+  newName: 906294041269.dkr.ecr.ap-northeast-2.amazonaws.com/front
+  newTag: 3895dd04
+- name: 906294041269.dkr.ecr.ap-northeast-2.amazonaws.com/grafana
+  newName: 906294041269.dkr.ecr.ap-northeast-2.amazonaws.com/grafana
+  newTag: 9471ac58
+resources:
+- ../../resources
