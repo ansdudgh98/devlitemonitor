@@ -13,12 +13,17 @@
 - 그라파나 설정 
 
 ### 사용한 기술 스택
+![monitoring system project-기술 스택 정리 drawio](https://github.com/ansdudgh98/devlitemonitor/assets/52616389/dc4af028-13af-4770-84a6-e8eb5827bf6d)
 
 ### AWS 아키텍처
+![monitoring system project-aws 구조 drawio](https://github.com/ansdudgh98/devlitemonitor/assets/52616389/4f6cd686-9596-401d-875f-d3df1790a058)
 
 ### 쿠버네티스 아키텍처
+![K8s 아키텍처 drawio](https://github.com/ansdudgh98/devlitemonitor/assets/52616389/c56f212d-4a32-413a-be24-177218299423)
 
 ### CI/CD
+![cicd drawio (1)](https://github.com/ansdudgh98/devlitemonitor/assets/52616389/eb0ca29d-a66a-41a7-bfe9-70ff2a9940da)
+
 
 
 
